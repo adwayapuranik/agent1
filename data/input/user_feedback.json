@@ -1,0 +1,23 @@
+[
+  {"id": 1, "date": "2025-01-14", "channel": "support", "sentiment_hint": "negative", "text": "My payment failed twice after clicking a recommended product. Never had this before."},
+  {"id": 2, "date": "2025-01-15", "channel": "support", "sentiment_hint": "negative", "text": "App is loading way slower than usual. Takes forever to get to my dashboard. Started today."},
+  {"id": 3, "date": "2025-01-15", "channel": "support", "sentiment_hint": "negative", "text": "Payment failed when I tried to buy a recommended item. Tried 3 times. Just gave up."},
+  {"id": 4, "date": "2025-01-16", "channel": "support", "sentiment_hint": "negative", "text": "I keep getting a 'Something went wrong' error on the recommendations page. Very frustrating."},
+  {"id": 5, "date": "2025-01-16", "channel": "support", "sentiment_hint": "negative", "text": "Payment declined again!! This is the 2nd day in a row. I'm going to cancel if this isn't fixed."},
+  {"id": 6, "date": "2025-01-16", "channel": "twitter", "sentiment_hint": "negative", "text": "@PurpleMerit your app is broken. Payments not working since the update. Switching to competitor."},
+  {"id": 7, "date": "2025-01-16", "channel": "app_store", "sentiment_hint": "negative", "text": "Updated yesterday and now the app is slow and my payment keeps failing. 1 star until fixed."},
+  {"id": 8, "date": "2025-01-17", "channel": "support", "sentiment_hint": "negative", "text": "Error: 'Recommendation service unavailable' every morning around 9am. Consistent issue."},
+  {"id": 9, "date": "2025-01-17", "channel": "support", "sentiment_hint": "negative", "text": "App is noticeably slower. Pages take 5-8 seconds to load. Used to be instant. Please fix."},
+  {"id": 10, "date": "2025-01-17", "channel": "support", "sentiment_hint": "negative", "text": "Payment failed. I verified my card is fine. Third failed attempt this week. Considering cancelling."},
+  {"id": 11, "date": "2025-01-17", "channel": "twitter", "sentiment_hint": "negative", "text": "Is @PurpleMerit down? Can't complete any purchases. #broken #fail"},
+  {"id": 12, "date": "2025-01-18", "channel": "support", "sentiment_hint": "negative", "text": "CANCELLED my subscription today. Payment has failed 4 times. No communication from support either."},
+  {"id": 13, "date": "2025-01-18", "channel": "support", "sentiment_hint": "negative", "text": "Recommendation service error keeps appearing. It blocks the whole screen. Can't dismiss it easily."},
+  {"id": 14, "date": "2025-01-18", "channel": "support", "sentiment_hint": "negative", "text": "Why is everything so slow? The app used to load in 1-2 seconds. Now it's 8-10 seconds on a good wifi."},
+  {"id": 15, "date": "2025-01-18", "channel": "twitter", "sentiment_hint": "negative", "text": "@PurpleMerit I've been a customer for 3 years. This update broke payments. Extremely disappointed."},
+  {"id": 16, "date": "2025-01-19", "channel": "support", "sentiment_hint": "negative", "text": "I just want to pay for my order! Why is the payment screen crashing? This is basic functionality!"},
+  {"id": 17, "date": "2025-01-19", "channel": "support", "sentiment_hint": "negative", "text": "Three friends also reported the same payment issue. It's not just me. Something is seriously wrong."},
+  {"id": 18, "date": "2025-01-19", "channel": "app_store", "sentiment_hint": "negative", "text": "Downgraded to 1 star. Payment failures are totally unacceptable. Reverting until this is fixed."},
+  {"id": 19, "date": "2025-01-20", "channel": "support", "sentiment_hint": "negative", "text": "App just crashed while I was in the middle of checkout via a recommendation. Lost my cart. Awful experience."},
+  {"id": 20, "date": "2025-01-20", "channel": "twitter", "sentiment_hint": "negative", "text": "@PurpleMerit this is embarrassing. Payment failures + slow app for a week. No status update?"},
+  {"id": 21, "date": "2025-01-20", "channel": "support", "sentiment_hint": "negative", "text": "Cancelled. The new feature is not worth the broken payments and sluggish app. Goodbye."}
+]
