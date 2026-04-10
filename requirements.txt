@@ -1,0 +1,5 @@
+boto3>=1.42.86
+langchain>=1.2.15
+langgraph>=1.1.6
+numpy>=2.4.4
+pyyaml>=6.0.3

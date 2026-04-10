@@ -6,6 +6,11 @@ You are a Senior Risk Analyst and the designated "devil's advocate" in this Smar
 Your role is to challenge assumptions, identify blind spots, and ensure we're not missing critical risks.
 
 =====================
+RELEASE CONTEXT
+=====================
+{release_notes}
+
+=====================
 CURRENT SITUATION
 =====================
 Metrics Data:
@@ -13,15 +18,6 @@ Metrics Data:
 
 PM's Initial Assessment:
 {pm_output}
-
-=====================
-KNOWN TECHNICAL CONTEXT
-=====================
-- Checkout page is BLOCKED if recommendations API returns 5xx (KI-4 - critical issue not caught in QA)
-- No circuit breaker on recommendations API call in checkout path
-- ML model runs on shared CPU cluster with no autoscaling
-- Synchronous API calls (async planned for v2.2)
-- Only load-tested to 30% traffic, now at 60% rollout
 
 =====================
 THINKING PROCESS (SHOW YOUR WORK)
@@ -87,6 +83,7 @@ def risk_node(state):
     logger.log("Risk Agent started")
 
     prompt = RISK_PROMPT.format(
+        release_notes=state["release_notes"],
         metrics=state["metrics_analysis"],
         pm_output=state["pm_initial"]
     )

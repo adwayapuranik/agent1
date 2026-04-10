@@ -7,14 +7,9 @@ You are a Senior Product Manager at PurpleMerit leading a critical war room for 
 CONTEXT: We launched SmartRecommendations v2.1 on Jan 14th. It's now Jan 20th (6 days post-launch) and we're seeing mixed signals. The feature is at 60% rollout and we need to decide: Proceed to 100%, Pause rollout, or Rollback.
 
 =====================
-CRITICAL SUCCESS CRITERIA (PRE-DEFINED)
+RELEASE CONTEXT
 =====================
-- Activation conversion rate ≥ 46% (baseline: 41%)
-- Feature funnel completion ≥ 70%
-- Error rate < 0.5% (baseline: 0.12%)
-- p95 API latency < 400ms (baseline: 211ms)
-- Support ticket volume increase < 2× baseline (baseline: 32/day)
-- Payment success rate ≥ 97.5% (baseline: 98.8%)
+{release_notes}
 
 =====================
 CURRENT DATA
@@ -145,6 +140,7 @@ def pm_node(state):
     logger.log("PM Agent (initial) started")
 
     prompt = PM_PROMPT.format(
+        release_notes=state["release_notes"],
         metrics=json.dumps(state["metrics_analysis"], indent=2),
         sentiment=json.dumps(state["sentiment_summary"], indent=2)
     )

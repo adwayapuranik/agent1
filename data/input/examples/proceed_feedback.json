@@ -1,0 +1,16 @@
+[
+  {"id": 1, "date": "2025-01-14", "channel": "in-app", "sentiment_hint": "positive", "text": "The new recommendations are spot on! Found two products I actually bought. Really impressed."},
+  {"id": 2, "date": "2025-01-14", "channel": "app_store", "sentiment_hint": "positive", "text": "SmartRecommendations is a game changer. The UI is cleaner too. 5 stars."},
+  {"id": 3, "date": "2025-01-15", "channel": "in-app", "sentiment_hint": "positive", "text": "Finally! Recommendations that make sense. Bought 3 items already."},
+  {"id": 4, "date": "2025-01-15", "channel": "twitter", "sentiment_hint": "positive", "text": "@PurpleMerit loving the new feature! Recommendations are actually useful now."},
+  {"id": 5, "date": "2025-01-16", "channel": "app_store", "sentiment_hint": "positive", "text": "Amazing update. The AI really understands my preferences now."},
+  {"id": 6, "date": "2025-01-16", "channel": "in-app", "sentiment_hint": "positive", "text": "Love how personalized everything feels now. Great job on the recommendations!"},
+  {"id": 7, "date": "2025-01-17", "channel": "twitter", "sentiment_hint": "positive", "text": "Shoutout to @PurpleMerit for nailing the recommendation algorithm!"},
+  {"id": 8, "date": "2025-01-17", "channel": "in-app", "sentiment_hint": "positive", "text": "The recommendations keep getting better. Found some amazing deals!"},
+  {"id": 9, "date": "2025-01-18", "channel": "app_store", "sentiment_hint": "positive", "text": "The new UI is clean and the recommendations are incredibly accurate."},
+  {"id": 10, "date": "2025-01-18", "channel": "in-app", "sentiment_hint": "positive", "text": "Discovered so many new products through recommendations. Excellent work!"},
+  {"id": 11, "date": "2025-01-19", "channel": "support", "sentiment_hint": "positive", "text": "Just wanted to compliment the team on the new recommendations. Brilliant!"},
+  {"id": 12, "date": "2025-01-19", "channel": "in-app", "sentiment_hint": "positive", "text": "Perfect recommendations every time. This feature is a winner!"},
+  {"id": 13, "date": "2025-01-20", "channel": "twitter", "sentiment_hint": "positive", "text": "@PurpleMerit you've outdone yourselves with this recommendation engine!"},
+  {"id": 14, "date": "2025-01-20", "channel": "in-app", "sentiment_hint": "positive", "text": "Best shopping experience I've had in years. The recommendations are perfect!"}
+]

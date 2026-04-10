@@ -16,7 +16,9 @@ def invoke_model(prompt, config):
         ],
         "inferenceConfig": {
             "max_new_tokens": config["model"]["max_tokens"],
-            "temperature": config["model"]["temperature"]
+            "temperature": config["model"]["temperature"],
+            "topP": 0.1,
+            "stopSequences": []
         }
     }
     response = client.invoke_model(
