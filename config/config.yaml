@@ -1,0 +1,12 @@
+model:
+  id: "amazon.nova-pro-v1:0"
+  temperature: 0.1
+  max_tokens: 2048
+  aws_region: "us-east-1"
+
+data:
+  metrics_path: "data/input/metrics.json"
+  feedback_path: "data/input/user_feedback.json"
+  release_notes_path: "data/input/release_notes.md"
+  output_dir: "data/output"
+  logs_dir: "data/logs"
