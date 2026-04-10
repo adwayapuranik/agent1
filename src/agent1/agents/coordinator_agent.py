@@ -114,8 +114,9 @@ OUTPUT (STRICT JSON FORMAT)
 }}
 """
 
-
 def coordinator_node(state):
+    logger = state["logger"]
+    logger.log("Coordinator started")
 
     prompt = COORDINATOR_PROMPT.format(
         metrics=state["metrics_analysis"],
@@ -125,4 +126,5 @@ def coordinator_node(state):
         risk=state["risk_output"]
     )
     state["final_output"] = invoke_model(prompt, state["config"])
+    logger.log("Coordinator completed")
     return state

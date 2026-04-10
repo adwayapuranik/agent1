@@ -82,7 +82,6 @@ Work through each step to challenge the current assessment:
 [What must be true for any decision to succeed]
 """
 
-
 def risk_node(state):
     logger = state["logger"]
     logger.log("Risk Agent started")
@@ -91,8 +90,7 @@ def risk_node(state):
         metrics=state["metrics_analysis"],
         pm_output=state["pm_initial"]
     )
-
+    
     state["risk_output"] = invoke_model(prompt, state["config"])
-
     logger.log("Risk Agent completed")
     return state

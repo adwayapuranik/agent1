@@ -72,8 +72,10 @@ Work through each step explicitly:
 - **Recommended Strategy:** [Specific approach]
 """
 
-
 def marketing_node(state):
+    logger = state["logger"]
+    logger.log("Marketing Agent started")
+
     prompt = MARKETING_PROMPT.format(
         sentiment=state["sentiment_summary"],
         issues=state["common_issues"]
@@ -81,4 +83,5 @@ def marketing_node(state):
 
     config = state["config"]
     state["marketing_output"] = invoke_model(prompt, config)
+    logger.log("Marketing Agent completed")
     return state

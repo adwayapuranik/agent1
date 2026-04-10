@@ -4,6 +4,8 @@ import os
 
 from src.agent1.orchestrator.graph import build_graph
 from src.agent1.tools.feedback_tools import summarize_sentiment, extract_common_issues
+from src.agent1.utils.logger import Logger
+
 
 def main():
     config = yaml.safe_load(open("config/config.yaml"))
@@ -15,6 +17,8 @@ def main():
 
     print("Sample feedback:", feedback[0])
     print("Sample metric:", list(metrics.items())[0])
+
+    logger = Logger(config["data"]["logs_dir"])
 
     graph = build_graph()
 
@@ -29,10 +33,15 @@ def main():
         "risk_output": "",
         "final_output": "",
         "config": config,
+        "logger": logger
     }
 
+    logger.log("Starting War Room Execution")
 
     result = graph.invoke(initial_state)
+
+    logger.log("Execution completed")
+
     output_path = os.path.join(config["data"]["output_dir"], "final_output.json")
 
     with open(output_path, "w") as f:

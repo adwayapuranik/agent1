@@ -1,5 +1,5 @@
 from aws.bedrock_invoke import invoke_model
-import json 
+import json
 
 PM_PROMPT = """
 You are a Senior Product Manager at PurpleMerit leading a critical war room for SmartRecommendations v2.1 launch.
@@ -10,7 +10,7 @@ CONTEXT: We launched SmartRecommendations v2.1 on Jan 14th. It's now Jan 20th (6
 CRITICAL SUCCESS CRITERIA (PRE-DEFINED)
 =====================
 - Activation conversion rate ≥ 46% (baseline: 41%)
-- Feature funnel completion ≥ 70% (baseline: 65%)
+- Feature funnel completion ≥ 70%
 - Error rate < 0.5% (baseline: 0.12%)
 - p95 API latency < 400ms (baseline: 211ms)
 - Support ticket volume increase < 2× baseline (baseline: 32/day)
@@ -140,19 +140,26 @@ Work through each step systematically:
 [How has your confidence changed and why]
 """
 
-
 def pm_node(state):
+    logger = state["logger"]
+    logger.log("PM Agent (initial) started")
+
     prompt = PM_PROMPT.format(
         metrics=json.dumps(state["metrics_analysis"], indent=2),
         sentiment=json.dumps(state["sentiment_summary"], indent=2)
     )
     state["pm_initial"] = invoke_model(prompt, state["config"])
+    logger.log("PM Agent (initial) completed")
     return state
 
 def pm_revision_node(state):
+    logger = state["logger"]
+    logger.log("PM Agent (revision) started")
+
     prompt = PM_REVISION_PROMPT.format(
         pm_initial=state["pm_initial"],
         risk_output=state["risk_output"]
     )
     state["pm_revised"] = invoke_model(prompt, state["config"])
+    logger.log("PM Agent (revision) completed")
     return state

@@ -20,6 +20,7 @@ def _extract_numeric_series(series):
 
     return cleaned
 
+
 def analyze_trends(metrics):
     trends = {}
     for k, v in metrics.items():
@@ -27,6 +28,7 @@ def analyze_trends(metrics):
         if len(series) >= 2:
             trends[k] = series[-1] - series[0]
     return trends
+
 
 def detect_anomalies(metrics):
     anomalies = {}

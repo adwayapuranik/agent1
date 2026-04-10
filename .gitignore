@@ -6,5 +6,7 @@ dist/
 wheels/
 *.egg-info
 
+/home/sagemaker-user/user-default-efs/agent1/notebooks
+
 # Virtual environments
 .venv
