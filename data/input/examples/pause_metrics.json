@@ -1,0 +1,93 @@
+{
+  "feature": "SmartRecommendations v2.1",
+  "launch_date": "2025-01-14",
+  "report_date": "2025-01-20",
+  "days_since_launch": 6,
+  "scenario": "pause",
+  "metrics": {
+    "activation_conversion_rate": {
+      "unit": "percent",
+      "data": [
+        {"date": "2025-01-14", "value": 44.2, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 46.8, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 47.2, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 46.1, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 45.8, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 45.3, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 44.9, "label": "post-launch"}
+      ],
+      "baseline_avg": 41.1,
+      "target": 46.0
+    },
+    "error_rate": {
+      "unit": "percent",
+      "data": [
+        {"date": "2025-01-14", "value": 0.14, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 0.16, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 0.19, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 0.22, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 0.25, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 0.28, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 0.31, "label": "post-launch"}
+      ],
+      "baseline_avg": 0.12,
+      "threshold": 0.50
+    },
+    "payment_success_rate": {
+      "unit": "percent",
+      "data": [
+        {"date": "2025-01-14", "value": 98.6, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 98.2, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 97.9, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 98.1, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 97.8, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 98.0, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 97.7, "label": "post-launch"}
+      ],
+      "baseline_avg": 98.8,
+      "threshold": 97.5
+    },
+    "support_ticket_volume": {
+      "unit": "count",
+      "data": [
+        {"date": "2025-01-14", "value": 38, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 42, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 45, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 48, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 52, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 55, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 58, "label": "post-launch"}
+      ],
+      "baseline_avg": 32.0,
+      "threshold": 80
+    },
+    "dau_wau_ratio": {
+      "unit": "ratio",
+      "data": [
+        {"date": "2025-01-14", "value": 0.41, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 0.40, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 0.39, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 0.40, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 0.38, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 0.39, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 0.37, "label": "post-launch"}
+      ],
+      "baseline_avg": 0.38,
+      "target": 0.42
+    },
+    "api_latency_p95_ms": {
+      "unit": "milliseconds",
+      "data": [
+        {"date": "2025-01-14", "value": 218, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 235, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 252, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 268, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 285, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 301, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 318, "label": "post-launch"}
+      ],
+      "baseline_avg": 211,
+      "slo_threshold": 400
+    }
+  }
+}

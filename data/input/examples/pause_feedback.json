@@ -1,0 +1,20 @@
+[
+  {"id": 1, "date": "2025-01-14", "channel": "in-app", "sentiment_hint": "positive", "text": "The new recommendations are spot on! Found two products I actually bought. Really impressed."},
+  {"id": 2, "date": "2025-01-14", "channel": "support", "sentiment_hint": "negative", "text": "My payment failed once after clicking a recommended product. Worked on retry though."},
+  {"id": 3, "date": "2025-01-14", "channel": "in-app", "sentiment_hint": "neutral", "text": "Interesting new section. Not sure how it decides what to show me but I'll give it a chance."},
+  {"id": 4, "date": "2025-01-15", "channel": "twitter", "sentiment_hint": "positive", "text": "@PurpleMerit the new recommendations UI is slick! loving it so far"},
+  {"id": 5, "date": "2025-01-15", "channel": "support", "sentiment_hint": "negative", "text": "App is loading a bit slower than usual. Not terrible but noticeable."},
+  {"id": 6, "date": "2025-01-15", "channel": "in-app", "sentiment_hint": "neutral", "text": "Recommendations seem okay. Not all relevant to me but I can see the idea. Hope it improves."},
+  {"id": 7, "date": "2025-01-16", "channel": "support", "sentiment_hint": "negative", "text": "I keep getting occasional errors on the recommendations page. Not always, but annoying."},
+  {"id": 8, "date": "2025-01-16", "channel": "in-app", "sentiment_hint": "positive", "text": "Loving the personalized touch. The recommendations for my last purchase were very relevant!"},
+  {"id": 9, "date": "2025-01-16", "channel": "app_store", "sentiment_hint": "neutral", "text": "Mixed feelings about the update. Some good features but also some issues."},
+  {"id": 10, "date": "2025-01-17", "channel": "support", "sentiment_hint": "negative", "text": "Payment failed once today. Worked on retry but concerning."},
+  {"id": 11, "date": "2025-01-17", "channel": "in-app", "sentiment_hint": "neutral", "text": "Some of the recommended products don't match my preferences at all. Hopefully the AI learns over time?"},
+  {"id": 12, "date": "2025-01-17", "channel": "app_store", "sentiment_hint": "positive", "text": "Great concept, execution needs polish. Recommendations are sometimes off but when they're right they're great!"},
+  {"id": 13, "date": "2025-01-18", "channel": "support", "sentiment_hint": "negative", "text": "App seems a bit slower since the update. Not terrible but noticeable."},
+  {"id": 14, "date": "2025-01-18", "channel": "in-app", "sentiment_hint": "neutral", "text": "Recommendations are okay. Not a wow moment but also not a bad experience. Just okay."},
+  {"id": 15, "date": "2025-01-19", "channel": "in-app", "sentiment_hint": "positive", "text": "I actually love the recommendations! Found a product I've been looking for months. Keep it up!"},
+  {"id": 16, "date": "2025-01-19", "channel": "app_store", "sentiment_hint": "neutral", "text": "The feature has potential but needs some refinement. 3 stars for now."},
+  {"id": 17, "date": "2025-01-20", "channel": "in-app", "sentiment_hint": "positive", "text": "Honestly the recommendations are brilliant for me. But I heard others are having issues so I'm nervous."},
+  {"id": 18, "date": "2025-01-20", "channel": "in-app", "sentiment_hint": "neutral", "text": "Mixed feelings. Recommendations are a nice touch but the app feels heavier and less responsive than before."}
+]

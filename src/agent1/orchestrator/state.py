@@ -5,6 +5,7 @@ class WarRoomState(TypedDict):
     metrics_analysis: Dict[str, Any]
     sentiment_summary: Dict[str, Any]
     common_issues: list
+    release_notes: str
     pm_initial: str
     pm_revised: str
     marketing_output: str

@@ -1,0 +1,108 @@
+{
+  "feature": "SmartRecommendations v2.1",
+  "launch_date": "2025-01-14",
+  "report_date": "2025-01-20",
+  "days_since_launch": 6,
+  "scenario": "proceed",
+  "metrics": {
+    "activation_conversion_rate": {
+      "unit": "percent",
+      "data": [
+        {"date": "2025-01-14", "value": 44.2, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 46.8, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 48.1, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 49.3, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 50.2, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 51.1, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 52.4, "label": "post-launch"}
+      ],
+      "baseline_avg": 41.1,
+      "target": 46.0
+    },
+    "error_rate": {
+      "unit": "percent",
+      "data": [
+        {"date": "2025-01-14", "value": 0.14, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 0.13, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 0.11, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 0.10, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 0.09, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 0.08, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 0.07, "label": "post-launch"}
+      ],
+      "baseline_avg": 0.12,
+      "threshold": 0.50
+    },
+    "payment_success_rate": {
+      "unit": "percent",
+      "data": [
+        {"date": "2025-01-14", "value": 98.9, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 99.1, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 99.2, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 99.0, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 99.1, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 99.3, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 99.2, "label": "post-launch"}
+      ],
+      "baseline_avg": 98.8,
+      "threshold": 97.5
+    },
+    "support_ticket_volume": {
+      "unit": "count",
+      "data": [
+        {"date": "2025-01-14", "value": 42, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 38, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 35, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 31, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 28, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 26, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 24, "label": "post-launch"}
+      ],
+      "baseline_avg": 32.0,
+      "threshold": 80
+    },
+    "dau_wau_ratio": {
+      "unit": "ratio",
+      "data": [
+        {"date": "2025-01-14", "value": 0.41, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 0.43, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 0.44, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 0.45, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 0.46, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 0.47, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 0.48, "label": "post-launch"}
+      ],
+      "baseline_avg": 0.38,
+      "target": 0.42
+    },
+    "api_latency_p95_ms": {
+      "unit": "milliseconds",
+      "data": [
+        {"date": "2025-01-14", "value": 218, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 205, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 198, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 192, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 188, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 185, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 181, "label": "post-launch"}
+      ],
+      "baseline_avg": 211,
+      "slo_threshold": 400
+    },
+    "feature_adoption_funnel_completion": {
+      "unit": "percent",
+      "data": [
+        {"date": "2025-01-14", "value": 71.2, "label": "launch-day"},
+        {"date": "2025-01-15", "value": 73.9, "label": "post-launch"},
+        {"date": "2025-01-16", "value": 75.4, "label": "post-launch"},
+        {"date": "2025-01-17", "value": 76.8, "label": "post-launch"},
+        {"date": "2025-01-18", "value": 78.2, "label": "post-launch"},
+        {"date": "2025-01-19", "value": 79.1, "label": "post-launch"},
+        {"date": "2025-01-20", "value": 80.8, "label": "post-launch"}
+      ],
+      "baseline_avg": null,
+      "target": 70.0,
+      "note": "Exceeding target consistently"
+    }
+  }
+}
