@@ -50,6 +50,7 @@ Agents programmatically invoke specialized tools:
    ```
 
 3. **Set up environment variables**
+   - If using AWS SageMaker, credentials are automatically configured
    ```bash
    export AWS_ACCESS_KEY_ID=your_access_key
    export AWS_SECRET_ACCESS_KEY=your_secret_key
@@ -59,7 +60,6 @@ Agents programmatically invoke specialized tools:
 4. **Configure AWS Bedrock**
    - Ensure you have access to Amazon Nova Pro model in AWS Bedrock
    - Model ID: `amazon.nova-pro-v1:0`
-   - If using AWS SageMaker, credentials are automatically configured
 
 ## How to Run
 
@@ -96,7 +96,7 @@ uv run main.py rollback
    uv run main.py rollback
    ```
 
-2. **View logs:**
+3. **View logs:**
    ```bash
    tail -f data/logs/run_*.log
    ```
@@ -174,7 +174,7 @@ The system produces a structured JSON decision meeting all requirements:
 
 ```
 agent1/
-├── src/agent1/           # Source layout
+├── src/agent1/           # Source Layout
 │   ├── agents/           # Individual agent implementations
 │   │   ├── coordinator_agent.py
 │   │   ├── data_agent.py
@@ -211,7 +211,7 @@ agent1/
 │   └── bedrock_invoke.py
 ├── config/             # Configuration files
 │   └── config.yaml
-├── notebooks/          # Jupyter notebooks if needed
+├── notebooks/          # Jupyter notebooks
 ├── main.py            # Main execution script
 ├── requirements.txt   # Python dependencies
 ├── pyproject.toml     # uv project configuration
@@ -278,7 +278,7 @@ The system includes realistic mock data that demonstrates different decision sce
 
 **Usage:**
 ```bash
-# Analyze default dashboard data (recommended for demonstration)
+# Analyze default dashboard data
 uv run main.py
 
 # Test specific decision outcomes only
@@ -289,4 +289,3 @@ uv run main.py rollback
 
 **Metrics include**: 6 key metrics - activation conversion, error rates, payment success, support tickets, DAU/WAU ratio, API latency
 **Feedback patterns**: Range from positive to negative sentiment across different channels
-
